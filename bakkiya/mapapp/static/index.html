@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <h1>Tirupati Interactive Map</h1>
+  <h2> Titus (212224230292)</h2>
+  <style>
+    body {
+      background: #f4f4f4;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .map {
+      position: relative;
+      display: inline-block;
+    }
+    .map img {
+      width: 100%;
+      max-width: 800px;
+    }
+    .hotspot {
+      position: absolute;
+      cursor: pointer;
+      border-radius: 50%;
+      opacity: 0.3;
+      transition: 0.3s;
+    }
+    .hotspot:hover {
+      opacity: 0.7;
+      box-shadow: 0 0 10px 5px #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="map">
+    <img src="map.png" alt="Tirupati Map">
+
+    <!-- Big Yellow - Venkateshwara -->
+    <a href="venkateshwara.html">
+      <div class="hotspot" style="top:15%; left:25%; width:120px; height:120px; background:yellow;"></div>
+    </a>
+
+    <!-- Small Yellow - Renigunta -->
+    <a href="renigunta.html">
+      <div class="hotspot" style="top:35%; left:65%; width:80px; height:80px; background:gold;"></div>
+    </a>
+
+    <!-- Green - Chandragiri -->
+    <a href="chandragiri.html">
+      <div class="hotspot" style="top:65%; left:35%; width:90px; height:90px; background:limegreen;"></div>
+    </a>
+
+    <!-- Red - Vadamalpeta -->
+    <a href="vadamalpeta.html">
+      <div class="hotspot" style="top:75%; left:70%; width:100px; height:100px; background:red;"></div>
+    </a>
+
+    <!-- White - Naravaripalli -->
+    <a href="naravaripalli.html">
+      <div class="hotspot" style="top:55%; left:25%; width:90px; height:90px; background:white;"></div>
+    </a>
+  </div>
+</body>
+</html>
